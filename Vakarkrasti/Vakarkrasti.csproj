@@ -6,4 +6,16 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Data\" />
+    <None Remove="Data\Database\" />
+    <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Data\Database\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.6" />
+  </ItemGroup>
 </Project>
