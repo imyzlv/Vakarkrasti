@@ -14,5 +14,33 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+
+}
+
+.bg {
+    background-image: url("/Content/Images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    .bg::before {
+        opacity: 0.1;
+    }
+
+@media(max-width: 100px) {
+    .media {
+        flex-direction: column;
+    }
+
+    .media-img-wrapper {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.media-img:hover {
+    transform: scale(1.05);
+    transition: transform .2s;
 }

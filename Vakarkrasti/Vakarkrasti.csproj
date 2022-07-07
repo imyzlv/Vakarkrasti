@@ -10,12 +10,28 @@
     <None Remove="Data\" />
     <None Remove="Data\Database\" />
     <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
+    <None Remove="Views\About\" />
+    <None Remove="Views\OurServices\" />
+    <None Remove="Views\Contacts\" />
+    <None Remove="Views\Destinations\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="Data\Database\" />
+    <Folder Include="wwwroot\Content\" />
+    <Folder Include="Views\About\" />
+    <Folder Include="Views\OurServices\" />
+    <Folder Include="Views\Contacts\" />
+    <Folder Include="Views\Destinations\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\Content\Images\background.jpg" />
+    <Content Remove="wwwroot\Content\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\Content\Images\background.jpg" />
   </ItemGroup>
 </Project>
