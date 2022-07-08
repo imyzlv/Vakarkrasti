@@ -15,6 +15,41 @@ namespace Vakarkrasti.Controllers
         {
             return View();
         }
+
+        public IActionResult GuestHouses()
+        {
+            return View("GuestHouses/Index");
+        }
+
+        public IActionResult GuestHousePaula()
+        {
+            return View("GuestHouses/Paula/Index");
+        }
+
+        public IActionResult GuestHouseAmelija()
+        {
+            return View("GuestHouses/Amelija/Index");
+        }
+
+        public IActionResult Activities()
+        {
+            return View("Activities/Index");
+        }
+
+        public IActionResult Fishing()
+        {
+            return View();
+        }
+
+        public IActionResult SUPRent()
+        {
+            return View();
+        }
+
+        public IActionResult RowingBoat()
+        {
+            return View();
+        }
     }
 }
 

@@ -14,6 +14,10 @@
     <None Remove="Views\OurServices\" />
     <None Remove="Views\Contacts\" />
     <None Remove="Views\Destinations\" />
+    <None Remove="Services\" />
+    <None Remove="Views\OurServices\GuestHouses\Paula\" />
+    <None Remove="Views\OurServices\GuestHouses\Amelija\" />
+    <None Remove="Views\OurServices\Activities\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
@@ -23,6 +27,10 @@
     <Folder Include="Views\OurServices\" />
     <Folder Include="Views\Contacts\" />
     <Folder Include="Views\Destinations\" />
+    <Folder Include="Services\" />
+    <Folder Include="Views\OurServices\GuestHouses\Paula\" />
+    <Folder Include="Views\OurServices\GuestHouses\Amelija\" />
+    <Folder Include="Views\OurServices\Activities\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.6" />

@@ -1,17 +1,59 @@
-﻿@{
-    ViewData["Title"] = "Par mums";
+﻿@model Vakarkrasti.Models.Contact
+@{
+    ViewData["Title"] = "Kontakti";
 }
 
-<div class="container p-4">
-    <p class="text-white">
-        Šis latgales nostūrītis ar mums ir saistīts jau sen, jo Viraudas ezera krasts saimniekam Jānim ir bērnības sēta un to iemīlējusi visa ģimene.
-        Mēs atrodamies Rāznas nacionālā parka teritorijā, līdzās mežiem, ezeriem, kalniem, līdzenumiem un sirsnīgiem kaimiņiem.
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <h4>Kontakti</h4>
+            <p>
+                Atpūtas komplekss "Vakarkrasti"
+                Adrese: Līči, Latviešu Virauda, Rēzeknes nov.
+                <br />
+                <br />
+                Tālrunis: +371 29237597
+            </p>
+            <br />
+            <div class="google-maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8873.261914723409!2d27.37486814224651!
+                    3d56.22078619089628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46c24fff7dc5aa29%3A0x4bff
+                    4c7edbc0fd96!2sLatvie%C5%A1u%20Virauda%2C%20M%C4%81ko%C5%86kalna%20pagasts%2C%20LV-4626!5e0!3m2!1
+                    slv!2slv!4v1657269692970!5m2!1slv!2slv" width="400" height="600" style="border:0;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
 
-        Tieši skaistā atrašanās vieta mudinājusi ar to iepazīstināt ne tikai radus un draugus, bet arī vēl nepazīstamus ceļotājus, kā rezultātā ir tapusi šī miera osta.
-
-        Atbrauc un ieskaties, kā zied pļava, ieklausies, kā skan putnu balsis un piedzīvo saules rietu.
-
-        Atbrauc un iemīli Latgali...
-    </p>
+        <div class="col-md-8">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <form asp-action="ContactFormMessage">
+                <h5>Nosūti mums ziņu</h5>
+                <div class="form-group">
+                    <label asp-for="@Model.Name" class="control-label"></label>
+                    <input type="text" asp-for="@Model.Name" class="form-control" />
+                    <span asp-validation-for="@Model.Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Email" class="control-label"></label>
+                    <input type="text" asp-for="@Model.Email" class="form-control" />
+                    <span asp-validation-for="@Model.Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Phone" class="control-label"></label>
+                    <input type="text" asp-for="@Model.Phone" class="form-control" />
+                    <span asp-validation-for="@Model.Phone" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Message" class="control-label"></label>
+                    <textarea rows="5" type="text" asp-for="@Model.Message" class="form-control"></textarea>
+                    <span asp-validation-for="@Model.Message" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Nosūtīt" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 
