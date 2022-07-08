@@ -44,3 +44,15 @@ body {
     transform: scale(1.05);
     transition: transform .2s;
 }
+
+.navbar-nav {
+    float: none;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+    .navbar-nav > li {
+        display: inline-block;
+        float: none;
+    }

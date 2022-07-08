@@ -8,45 +8,49 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Vakarkrasti.styles.css" asp-append-version="true" />
 </head>
-<body class="bg">
+<body>
     <header>
-        <!-- <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Vakarkrasti</a>
+        <nav class="bg navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid text-center">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+                <div class="container">
+                    <div class="row">
+                        <a class="text-white text-decoration-none" asp-area="" asp-controller="Home" asp-action="Index">
+                            <h1 class="display-1">Vakarkrasti</h1>
+                        </a>
+                        <div class="row p-3">
+                            <h5 class="t-3 b-3 border-top border-bottom text-white">Vieta mierīgai atpūtai</h5>
+                        </div>
+                        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between text-center text-white">
+                            <ul class="navbar-nav flex-grow-1">
+                                <li class="nav-item">
+                                    <a class="text-white h4 text-decoration-none" asp-area="" asp-controller="Home" asp-action="Index">SĀKUMS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-white h4 text-decoration-none" asp-area="" asp-controller="About" asp-action="Index">&nbsp;&nbsp;PAR MUMS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-white h4 text-decoration-none" asp-area="" asp-controller="OurServices" asp-action="Index">&nbsp;&nbsp;PAKALPOJUMI</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-white h4 text-decoration-none" asp-area="" asp-controller="Contacts" asp-action="Index">&nbsp;&nbsp;KONTAKTI</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-white h4 text-decoration-none" asp-area="" asp-controller="Destinations" asp-action="Index">&nbsp;&nbsp;MARŠRUTI</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
-           -->
+
     </header>
     <div class="container">
         <main role="main" class="p-4">
-            <div class="text-center text-white">
-                <a class="text-white text-decoration-none" asp-area="" asp-controller="Home" asp-action="Index">
-                    <h1 class="display-1">Vakarkrasti</h1>
-                </a>
-
-                <div class="row p-3">
-                    <h5 class="t-3 b-3 border-top border-bottom">Vieta mierīgai atpūtai</h5>
-                </div>
-                <a class="text-white h4 text-decoration-none" asp-area="" asp-controller="Home" asp-action="Index">SĀKUMS</a>
-                <a class="text-white h4 text-decoration-none" asp-area="" asp-controller="About" asp-action="Index">&nbsp;&nbsp;PAR MUMS</a>
-                <a class="text-white h4 text-decoration-none" asp-area="" asp-controller="OurServices" asp-action="Index">&nbsp;&nbsp;PAKALPOJUMI</a>
-                <a class="text-white h4 text-decoration-none" asp-area="" asp-controller="Contacts" asp-action="Index">&nbsp;&nbsp;KONTAKTI</a>
-                <a class="text-white h4 text-decoration-none" asp-area="" asp-controller="Destinations" asp-action="Index">&nbsp;&nbsp;MARŠRUTI</a>
-            </div>
             @RenderBody()
         </main>
     </div>
