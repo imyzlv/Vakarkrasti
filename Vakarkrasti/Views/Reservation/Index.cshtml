@@ -1,0 +1,83 @@
+﻿@model Vakarkrasti.Models.Reservations
+@{
+    ViewData["Title"] = "Rezervācija";
+}
+
+<div class="container">
+    <div class="row">
+        <h3 class="text-center">Rezervācijas forma</h3>
+    </div>
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <form asp-action="CreateReservation">
+        <div class="row">
+            <div class="col-md-1">
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="@Model.Name" class="control-label"></label>
+                    <input type="text" asp-for="@Model.Name" class="form-control" />
+                    <span asp-validation-for="@Model.Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.ArrivalDate" class="control-label"></label>
+                    <input type="date" asp-for="@Model.ArrivalDate" class="form-control" />
+                    <span asp-validation-for="@Model.ArrivalDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.DepartureDate" class="control-label"></label>
+                    <input type="date" asp-for="@Model.DepartureDate" class="form-control" />
+                    <span asp-validation-for="@Model.DepartureDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.GuestHouse" class="control-label"></label>
+                    <br />
+                    @Html.DropDownListFor(m => m.GuestHouse, new SelectList(ViewBag.GuestHouses, "Value", "Text"), new { @class = "form-control" })
+                    <span asp-validation-for="@Model.GuestHouse" class="text-danger"></span>
+                </div>
+
+            </div>
+            <div class="col-md-2">
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="@Model.Email" class="control-label"></label>
+                    <input type="email" asp-for="@Model.Email" class="form-control" />
+                    <span asp-validation-for="@Model.Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.ArrivalTime" class="control-label"></label>
+                    <input type="time" asp-for="@Model.ArrivalTime" class="form-control" />
+                    <span asp-validation-for="@Model.ArrivalTime" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.DepartureTime" class="control-label"></label>
+                    <input type="time" asp-for="@Model.DepartureTime" class="form-control" />
+                    <span asp-validation-for="@Model.DepartureTime" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.NumberOfGuests" class="control-label"></label>
+                    <input type="text" asp-for="@Model.NumberOfGuests" class="form-control" />
+                    <span asp-validation-for="@Model.NumberOfGuests" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="col-md-1">
+
+            </div>
+
+        </div>
+        <br />
+        <div class="row text-center">
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Nosūtīt" class="btn btn-primary btn-lg btn" />
+            </div>
+        </div>
+    </form>
+
+</div>
+
