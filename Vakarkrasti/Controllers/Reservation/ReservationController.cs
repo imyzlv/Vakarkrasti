@@ -18,7 +18,8 @@ namespace Vakarkrasti.Controllers.Reservation
             {
                 new SelectListItem() { Text = "Izvēlēties...", Value = "Guest house" },
                 new SelectListItem() { Text = "Paula", Value = "Paula" },
-                new SelectListItem() { Text = "Amēlija", Value = "Amēlija" }
+                new SelectListItem() { Text = "Amēlija", Value = "Amēlija" },
+                new SelectListItem() { Text= "Abas", Value = "Abas"}
             };
             ViewBag.GuestHouses = guestHouses;
             return View("Index");

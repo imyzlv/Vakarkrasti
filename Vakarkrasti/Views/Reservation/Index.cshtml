@@ -21,15 +21,11 @@
                     <span asp-validation-for="@Model.Name" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="@Model.ArrivalDate" class="control-label"></label>
-                    <input type="date" asp-for="@Model.ArrivalDate" class="form-control" />
-                    <span asp-validation-for="@Model.ArrivalDate" class="text-danger"></span>
+                    <label asp-for="@Model.ArrivalDateTime" class="control-label"></label>
+                    <input type="date" asp-for="@Model.ArrivalDateTime" class="form-control" />
+                    <span asp-validation-for="@Model.ArrivalDateTime" class="text-danger"></span>
                 </div>
-                <div class="form-group">
-                    <label asp-for="@Model.DepartureDate" class="control-label"></label>
-                    <input type="date" asp-for="@Model.DepartureDate" class="form-control" />
-                    <span asp-validation-for="@Model.DepartureDate" class="text-danger"></span>
-                </div>
+
                 <div class="form-group">
                     <label asp-for="@Model.GuestHouse" class="control-label"></label>
                     <br />
@@ -49,14 +45,9 @@
                     <span asp-validation-for="@Model.Email" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="@Model.ArrivalTime" class="control-label"></label>
-                    <input type="time" asp-for="@Model.ArrivalTime" class="form-control" />
-                    <span asp-validation-for="@Model.ArrivalTime" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="@Model.DepartureTime" class="control-label"></label>
-                    <input type="time" asp-for="@Model.DepartureTime" class="form-control" />
-                    <span asp-validation-for="@Model.DepartureTime" class="text-danger"></span>
+                    <label asp-for="@Model.DepartureDateTime" class="control-label"></label>
+                    <input type="date" asp-for="@Model.DepartureDateTime" class="form-control" />
+                    <span asp-validation-for="@Model.DepartureDateTime" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label asp-for="@Model.NumberOfGuests" class="control-label"></label>
@@ -71,11 +62,20 @@
 
         </div>
         <br />
-        <div class="row text-center">
-            <br />
-            <div class="form-group">
-                <input type="submit" value="Nosūtīt" class="btn btn-primary btn-lg btn" />
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-md-10">
+                <div class="form-group">
+                    <label asp-for="@Model.Comment" class="control-label"></label>
+                    <textarea rows="5" type="text" asp-for="@Model.Comment" class="form-control"></textarea>
+                    <span asp-validation-for="@Model.Comment" class="text-danger"></span>
+                </div>
+                <br />
+                <div class="form-group">
+                    <input type="submit" value="Nosūtīt" class="btn btn-primary btn-lg btn" />
+                </div>
             </div>
+            <div class="col-1"></div>
         </div>
     </form>
 
