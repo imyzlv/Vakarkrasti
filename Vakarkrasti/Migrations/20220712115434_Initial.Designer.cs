@@ -11,7 +11,7 @@ using Vakarkrasti.Data;
 namespace Vakarkrasti.Migrations
 {
     [DbContext(typeof(VKContext))]
-    [Migration("20220712064808_Initial")]
+    [Migration("20220712115434_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -46,13 +46,13 @@ namespace Vakarkrasti.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("ArrivalDateTime")
+                    b.Property<DateTime>("CheckIn")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CheckOut")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Comment")
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTime>("DepartureDateTime")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Email")

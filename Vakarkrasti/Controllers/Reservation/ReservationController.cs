@@ -55,7 +55,7 @@ namespace Vakarkrasti.Controllers.Reservation
                 //                  select c;
 
                 var bookedDates = from c in _db.Reservation
-                                  where (c.DepartureDateTime > reservation.ArrivalDateTime && c.ArrivalDateTime < reservation.DepartureDateTime)
+                                  where (c.CheckOut > reservation.CheckIn && c.CheckIn < reservation.CheckOut)
                                   select c;
                 if (!bookedDates.Any())
                 {

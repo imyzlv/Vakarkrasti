@@ -32,8 +32,8 @@ namespace Vakarkrasti.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(type: "TEXT", nullable: false),
                     Email = table.Column<string>(type: "TEXT", nullable: false),
-                    ArrivalDateTime = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    DepartureDateTime = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    CheckIn = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    CheckOut = table.Column<DateTime>(type: "TEXT", nullable: false),
                     GuestHouse = table.Column<string>(type: "TEXT", nullable: false),
                     NumberOfGuests = table.Column<int>(type: "INTEGER", nullable: false),
                     Comment = table.Column<string>(type: "TEXT", nullable: true)

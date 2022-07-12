@@ -19,11 +19,11 @@ namespace Vakarkrasti.Models
 
         [Required]
         [Display(Name ="Ierašanās datums")]
-        public DateTime ArrivalDateTime { get; set; }
+        public DateTime CheckIn { get; set; }
 
         [Required]
         [Display(Name ="Izrakstīšanās datums")]
-        public DateTime DepartureDateTime { get; set; }
+        public DateTime CheckOut { get; set; }
 
         [Required]
         [Display(Name = "Viesu māja")]
