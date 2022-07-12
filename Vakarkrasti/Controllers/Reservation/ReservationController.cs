@@ -60,8 +60,8 @@ namespace Vakarkrasti.Controllers.Reservation
                 if (!bookedDates.Any())
                 {
                     Console.WriteLine("Datumi pieejami. Rezervācija veiksmīga");
-                    _db.Reservation.Add(reservation);
-                    _db.SaveChanges();
+                    //_db.Reservation.Add(reservation);
+                    //_db.SaveChanges();
 
                 }
                 else

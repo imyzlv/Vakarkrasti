@@ -25,6 +25,7 @@
     <None Remove="Microsoft.EntityFrameworkCore.Sqlite.Core" />
     <None Remove="Microsoft.EntityFrameworkCore.Tools" />
     <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="popper.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
@@ -54,6 +55,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="popper.js" Version="1.16.1" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\Content\Images\background.jpg" />
