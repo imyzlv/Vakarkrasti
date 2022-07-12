@@ -29,7 +29,7 @@
                 <div class="form-group">
                     <label asp-for="@Model.GuestHouse" class="control-label"></label>
                     <br />
-                    @Html.DropDownListFor(m => m.GuestHouse, new SelectList(ViewBag.GuestHouses, "Value", "Text"), new { @class = "form-control" })
+                    @Html.DropDownListFor(m => m.GuestHouse, new SelectList(ViewBag.GuestHouse, "Value", "Text"), new { @class = "form-control" })
                     <span asp-validation-for="@Model.GuestHouse" class="text-danger"></span>
                 </div>
 

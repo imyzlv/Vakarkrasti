@@ -1,0 +1,35 @@
+﻿@model Vakarkrasti.Models.Houses
+@{
+    ViewData["Title"] = "Kontakti";
+}
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-8">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <form asp-action="AddHouse">
+                <h5>Pievienot māju</h5>
+                <div class="form-group">
+                    <label asp-for="@Model.Name" class="control-label"></label>
+                    <input type="text" asp-for="@Model.Name" class="form-control" />
+                    <span asp-validation-for="@Model.Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.BedCount" class="control-label"></label>
+                    <input type="number" asp-for="@Model.BedCount" class="form-control" />
+                    <span asp-validation-for="@Model.BedCount" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Price" class="control-label"></label>
+                    <input type="number" min="1" step="any" asp-for="@Model.Price" class="form-control" />
+                    <span asp-validation-for="@Model.Price" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Nosūtīt" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

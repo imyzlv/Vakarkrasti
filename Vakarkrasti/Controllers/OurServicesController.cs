@@ -38,17 +38,17 @@ namespace Vakarkrasti.Controllers
 
         public IActionResult Fishing()
         {
-            return View();
+            return View("Activities/Index");
         }
 
         public IActionResult SUPRent()
         {
-            return View();
+            return View("Activities/Index");
         }
 
         public IActionResult RowingBoat()
         {
-            return View();
+            return View("Activities/Index");
         }
     }
 }

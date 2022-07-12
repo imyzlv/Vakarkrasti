@@ -20,6 +20,11 @@
     <None Remove="Views\OurServices\Activities\" />
     <None Remove="Controllers\Reservation\" />
     <None Remove="Views\Reservation\" />
+    <None Remove="Controllers\Admin\" />
+    <None Remove="Views\Admin\" />
+    <None Remove="Microsoft.EntityFrameworkCore.Sqlite.Core" />
+    <None Remove="Microsoft.EntityFrameworkCore.Tools" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
@@ -35,9 +40,20 @@
     <Folder Include="Views\OurServices\Activities\" />
     <Folder Include="Controllers\Reservation\" />
     <Folder Include="Views\Reservation\" />
+    <Folder Include="Controllers\Admin\" />
+    <Folder Include="Views\Admin\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="6.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.6">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.6">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\Content\Images\background.jpg" />
